@@ -6,7 +6,7 @@ const bookRoutes = require('./routes/bookRoutes');
 const app = express();
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost:27017/bookStore')
+mongoose.connect('mongodb+srv://Shwetha:shwe1120@mycluster.wa02z.mongodb.net/')
   .then(() => console.log('Database connected...'))
   .catch(err => console.log(err));
 
